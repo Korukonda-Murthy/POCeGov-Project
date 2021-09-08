@@ -1,0 +1,46 @@
+
+.navbar {
+    background-color: #9697a6;
+    font-family: Verdana;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index:10;
+    
+  }
+  .navbar-nav{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    font-style: normal;
+    font-size-adjust: initial;
+}
+  .card-header{
+
+    background-color: gray;
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+  .card-footer {
+      background-color: gray;
+    font-family: Verdana;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0000FF;
+}
+.img-fluid {
+  width: 100%;
+  height: 150px;
+}
+.card-footer
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

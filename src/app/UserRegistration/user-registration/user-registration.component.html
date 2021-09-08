@@ -1,0 +1,55 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <table class="table">
+   <tr>
+       <td>
+          <mat-form-field class="field">
+                <input type="email" formControlName="user_email" matInput  name="Email" placeholder="Email ID" >
+          </mat-form-field>
+          <mat-error>
+              <span *ngIf="!form.get('user_email')!.valid && form.get('user_email')!.touched">*Enter the vaild email Id</span>
+          </mat-error>
+       </td>
+   </tr>
+   <tr>
+      <td>
+         <mat-form-field class="field">
+               <input matInput  formControlName ="user_password" name="Password" placeholder="Password">
+         </mat-form-field>
+         <mat-error>
+          <span *ngIf="!form.get('user_password')!.valid && form.get('user_password')!.touched">*Password Required</span>
+      </mat-error>
+      </td>
+  </tr>
+  <tr>
+      <td>
+         <mat-form-field class="field">
+               <input matInput formControlName="first_name" type="text"  placeholder=" First Name" name="firstName" >
+         </mat-form-field>
+         <mat-error>
+          <span *ngIf="!form.get('first_name')!.valid && form.get('first_name')!.touched">*Enter the First Name</span>
+      </mat-error>
+      </td>
+  </tr>
+  <tr>
+      <td>
+         <mat-form-field class="field">
+               <input matInput formControlName="family_name" placeholder="Family Name" name="familyName">
+         </mat-form-field>
+         <mat-error>
+          <span *ngIf="!form.get('family_name')!.valid && form.get('family_name')!.touched">*Enter the Family Name</span>
+      </mat-error>
+      </td>
+  </tr>
+  <tr>
+      <td>
+         <button mat-raised-button color='primary' [disabled]="!form.valid" class="content-center">Register</button>
+      </td>
+  </tr>
+  
+  </table>
+</form>
+<!-- <div class="cointainer" *ngFor="let currunt of curruntRegister">
+  <h2>{{currunt.user_email}}</h2>
+</div>
+
+ -->

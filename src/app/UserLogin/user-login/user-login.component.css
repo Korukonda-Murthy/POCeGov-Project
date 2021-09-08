@@ -1,0 +1,20 @@
+.field
+{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* .text-center{
+  font-weight: bold;
+  font-family: Verdana;
+  text-align: center;
+} */
+.size{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+}
+.content-center{
+  font-family: Verdana;
+}
+.demo1{
+  margin-left: 100%;
+}

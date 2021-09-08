@@ -1,0 +1,17 @@
+.example-full-width{
+    width: 100%;
+  }
+  .field{
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .example-full-width{
+    width: 100%;
+  }
+  .button{
+    width: 300px;
+    margin-left: 40%;
+  }

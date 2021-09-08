@@ -1,0 +1,270 @@
+<mat-card class="example-card">
+    <mat-card-title  class="text" style="font-size: 20px;" > *Please Enter The Following Information</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="vehicleRegisterForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-lg-3"></div>
+        <div class="col-lg-3">
+            <mat-form-field  class="field" appearance="fill" >
+                <mat-label>
+                    Owner First Name
+                </mat-label><input type="text" formControlName="owner_first_name" matInput  name="owner_first_name" placeholder="Owner First Name" >
+               </mat-form-field>
+               <mat-error>
+                   <span *ngIf="!vehicleRegisterForm.get('owner_first_name')!.valid && vehicleRegisterForm.get('owner_first_name')!.touched"> *Owner First Name Required</span>
+               </mat-error>
+          </div>
+          <div class="col-lg-3"><mat-form-field class="field" appearance="fill">
+            <mat-label>Owner Family Name </mat-label><input type="text" matInput  formControlName ="owner_family_name" name="owner_family_name" placeholder="Owner Family Name">
+      </mat-form-field>
+      <mat-error>
+       <span *ngIf="!vehicleRegisterForm.get('owner_family_name')!.valid && vehicleRegisterForm.get('owner_family_name')!.touched">*Owner Family Name Required</span>
+    </mat-error>
+    </div>
+          <div class="col-lg-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <mat-form-field class="field" appearance="fill">
+                    <mat-label>Owner ID Number</mat-label><input type="text" formControlName="owner_id_number" matInput  name="owner_id_number" placeholder="Owner ID Number" >
+              </mat-form-field>
+              <mat-error>
+                  <span *ngIf="!vehicleRegisterForm.get('owner_id_number')!.valid && vehicleRegisterForm.get('owner_id_number')!.touched"> *Owner ID Number Required</span>
+              </mat-error>
+    
+              <mat-form-field class="field" appearance="fill">
+                    <mat-label>Owner City Name</mat-label><input type="text" matInput  formControlName ="owner_city" name="owner_city" placeholder="Owner City Name">
+              </mat-form-field>
+              <mat-error>
+               <span *ngIf="!vehicleRegisterForm.get('owner_city')!.valid && vehicleRegisterForm.get('owner_city')!.touched">*Owner City Name Required</span>
+           </mat-error>
+           
+              <mat-form-field class="field" appearance="fill">
+                    <mat-label>Owner Email Address</mat-label><input type="email" matInput  formControlName ="owner_email_address" name="owner_city" placeholder="Owner Email Address">
+              </mat-form-field>
+              <mat-error>
+               <span *ngIf="!vehicleRegisterForm.get('owner_email_address')!.valid && vehicleRegisterForm.get('owner_email_address')!.touched">*Owner Email Address Required</span>
+           </mat-error>
+           
+              <mat-form-field class="field" appearance="fill">
+                    <mat-label>Vehicle Make</mat-label><input type="tel" matInput  formControlName ="vehicle_make" name="vehicle_make" placeholder="Vehicle Make">
+              </mat-form-field>
+              <mat-error>
+               <span *ngIf="!vehicleRegisterForm.get('vehicle_make')!.valid && vehicleRegisterForm.get('vehicle_make')!.touched">*Vehicle Make Required</span>
+           </mat-error>  
+         
+              <mat-form-field class="field" appearance="fill">
+                    
+                    <mat-select formControlName ="vehicle_colour" name="vehicle_colour" placeholder="Pick the Vehicle Color">
+                       <mat-option value="Black">Black</mat-option>
+                       <mat-option value="Gray">Gray</mat-option>
+                       <mat-option value="silver">Silver</mat-option>
+                       <mat-option value="Red">Red</mat-option>
+                       <mat-option value="Blue">Blue</mat-option>
+                       <mat-option value="Brown">Brown</mat-option>
+                       <mat-option value="green">green</mat-option>
+                       <mat-option value="Beige">Beige</mat-option>
+                       <mat-option value="Orange">Orange</mat-option>
+                       <mat-option value="Gold">Gold</mat-option>
+                       <mat-option value="Yellow">Yellow</mat-option>
+                       <mat-option value="Purple">Purple</mat-option>
+                     </mat-select>
+              </mat-form-field>
+              <mat-error>
+               <span *ngIf="!vehicleRegisterForm.get('vehicle_colour')!.valid && vehicleRegisterForm.get('vehicle_colour')!.touched">*Vehicle Color Required</span>
+           </mat-error>  
+           
+              <mat-form-field class="field" appearance="fill">
+                    <mat-label>Number of Cylinder</mat-label><input type="tel" matInput  formControlName ="number_of_cylinder" name="number_of_cylinder" placeholder=" Number of Cylinder">
+              </mat-form-field>
+              <mat-error>
+               <span *ngIf="!vehicleRegisterForm.get('number_of_cylinder')!.valid && vehicleRegisterForm.get('number_of_cylinder')!.touched">*Number of Cylinder Required</span>
+           </mat-error>  
+           
+              <mat-form-field class="field" appearance="fill">
+               <mat-label>Vehicle Usage</mat-label> <input type="text" matInput  formControlName ="vehicle_usage" name="vehicle_usage" placeholder="Vehicle Usage">
+              </mat-form-field>
+              <mat-error>
+               <span *ngIf="!vehicleRegisterForm.get('vehicle_usage')!.valid && vehicleRegisterForm.get('vehicle_usage')!.touched">*Vehicle Usage Required</span>
+           </mat-error>  
+           
+              <mat-form-field class="field" appearance="fill">
+                    <mat-label>Seller First Name</mat-label><input type="text" formControlName="seller_first_name" matInput  name="seller_first_name" placeholder="Seller First Name" >
+              </mat-form-field>
+              <mat-error>
+                  <span *ngIf="!vehicleRegisterForm.get('seller_first_name')!.valid && vehicleRegisterForm.get('seller_first_name')!.touched"> *Seller First Name Required</span>
+              </mat-error>
+           
+              <mat-form-field class="field" appearance="fill">
+               <mat-label>Seller Date of Birth</mat-label>
+                 <input type="date" matInput  formControlName ="seller_date_of_birth" name="seller_date_of_birth" >
+              </mat-form-field>
+              <mat-error>
+               <span *ngIf="!vehicleRegisterForm.get('seller_date_of_birth')!.valid && vehicleRegisterForm.get('seller_date_of_birth')!.touched">*Seller Date of Birth Required</span>
+           </mat-error>  
+           
+           <mat-form-field class="field" appearance="fill">
+            <mat-label>Seller Street Address</mat-label><input type="text" matInput  formControlName ="seller_street_address" name="seller_street_address" placeholder="Seller Street Address">
+      </mat-form-field>
+      <mat-error>
+       <span *ngIf="!vehicleRegisterForm.get('seller_street_address')!.valid && vehicleRegisterForm.get('seller_street_address')!.touched">Seller Street Address</span>
+   </mat-error>  
+           
+            </div>
+            <div class="col-lg-4">
+                <mat-form-field class="field" appearance="fill">
+                    <mat-label>Owner Date of Birth</mat-label>
+                        <input type="date" matInput  formControlName ="owner_date_of_birth" name="owner_date_of_birth" >
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('owner_date_of_birth')!.valid && vehicleRegisterForm.get('owner_date_of_birth')!.touched">*Owner Date of Birth Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Owner Province</mat-label><input type="text" matInput  formControlName ="owner_province" name="owner_province" placeholder="Owner Province">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('owner_province')!.valid && vehicleRegisterForm.get('owner_province')!.touched">*Owner Province Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Owner Phone Number</mat-label><input type="tel" matInput  formControlName ="owner_phone_number" name="owner_phone_number" placeholder=" Owner Phone Number">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('owner_phone_number')!.valid && vehicleRegisterForm.get('owner_phone_number')!.touched">*Owner Phone Number Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                    <mat-label>Year of Make</mat-label>
+                         <mat-label></mat-label><input type="tel" matInput  formControlName ="year_make" name="year_make" >
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('year_make')!.valid && vehicleRegisterForm.get('year_make')!.touched">*Year of Make Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>VIN</mat-label><input type="tel" matInput  formControlName ="vin" name="vin" placeholder=" VIN">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('vin')!.valid && vehicleRegisterForm.get('vin')!.touched">*VIN Required</span>
+                </mat-error>  
+               
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Fuel Type</mat-label><input type="text" matInput  formControlName ="fuel_type" name="fuel_type" placeholder=" Fuel Type">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('fuel_type')!.valid && vehicleRegisterForm.get('fuel_type')!.touched">*Fuel Type Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                    <mat-label>Date of Purchase</mat-label>
+                         <input type="date" matInput  formControlName ="date_purchase" name="date_purchase" >
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('date_purchase')!.valid && vehicleRegisterForm.get('date_purchase')!.touched">*Date of Purchase Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Seller Family Name</mat-label><input type="text" formControlName="seller_family_name" matInput  name="seller_family_name" placeholder="Seller Family Name" >
+                   </mat-form-field>
+                   <mat-error>
+                       <span *ngIf="!vehicleRegisterForm.get('seller_family_name')!.valid && vehicleRegisterForm.get('seller_family_name')!.touched"> *Seller Family Name Required</span>
+                   </mat-error>
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Seller Email ID</mat-label><input type="email" formControlName="seller_email_address" matInput  name="seller_email_address" placeholder="Seller Email ID" >
+                   </mat-form-field>
+                   <mat-error>
+                       <span *ngIf="!vehicleRegisterForm.get('seller_email_address')!.valid && vehicleRegisterForm.get('seller_email_address')!.touched"> *Seller Email ID Required</span>
+                   </mat-error>
+                   <mat-form-field class="field" appearance="fill">
+                    <mat-label>Seller City</mat-label><input type="text" matInput  formControlName ="seller_city" name="seller_city" placeholder=" Seller City">
+              </mat-form-field>
+              <mat-error>
+               <span *ngIf="!vehicleRegisterForm.get('seller_city')!.valid && vehicleRegisterForm.get('seller_phone_number')!.touched">*Seller City Required</span>
+           </mat-error>
+            </div>
+            <div class="col-lg-4">
+                <mat-form-field class="field" appearance="fill">
+                    <mat-label>Owner Street Address</mat-label> <textarea  matInput  formControlName ="owner_street_address" name="owner_street_address" placeholder="Owner Street Address"></textarea>
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('owner_street_address')!.valid && vehicleRegisterForm.get('owner_street_address')!.touched">*Owner Street Address Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                    <mat-label>Owner State</mat-label><input type="text" matInput  formControlName ="owner_state" name="owner_state" placeholder="Owner State">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('owner_state')!.valid && vehicleRegisterForm.get('owner_state')!.touched">*Owner State Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Country Make</mat-label><input type="text" matInput  formControlName ="country_make" name="country_make" placeholder="Country Make">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('country_make')!.valid && vehicleRegisterForm.get('country_make')!.touched">*Country Make Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Vehicle Model</mat-label><input type="text" matInput  formControlName ="vehicle_model" name="vehicle_model" placeholder=" Vehicle Model">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('vehicle_model')!.valid && vehicleRegisterForm.get('vehicle_model')!.touched">*Vehicle Model Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Odometer Reading</mat-label><input type="tel" matInput  formControlName ="odometer_reading" name="odometer_reading" placeholder=" Odometer Reading">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('odometer_reading')!.valid && vehicleRegisterForm.get('odometer_reading')!.touched">*Odometer Reading Required</span>
+                </mat-error>  
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Vehicle Body Type </mat-label><input type="text" matInput  formControlName ="vehicle_body_type" name="vehicle_type" placeholder=" Vehicle Body Type">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('vehicle_body_type')!.valid && vehicleRegisterForm.get('vehicle_body_type')!.touched">*Vehicle Body Type Required</span>
+                </mat-error>  
+                <mat-form-field class="field" appearance="fill">
+                    <mat-label>Seller Company Name</mat-label><input type="text" formControlName="seller_company_name" matInput  name="seller_company_name" placeholder="Seller Company Name" >
+              </mat-form-field>
+              <mat-error>
+                  <span *ngIf="!vehicleRegisterForm.get('seller_company_name')!.valid && vehicleRegisterForm.get('seller_company_name')!.touched"> *Seller Company Name</span>
+              </mat-error>
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Seller ID Number</mat-label><input type="text" formControlName="seller_id_number" matInput  name="seller_id_number" placeholder="Seller ID Number" >
+                   </mat-form-field>
+                   <mat-error>
+                       <span *ngIf="!vehicleRegisterForm.get('seller_id_number')!.valid && vehicleRegisterForm.get('seller_id_number')!.touched"> *Seller ID Number Required</span>
+                   </mat-error>
+                
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Seller Phone Number</mat-label><input type="tel" matInput  formControlName ="seller_phone_number" name="seller_phone_number" placeholder=" Seller Phone Number">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('seller_phone_number')!.valid && vehicleRegisterForm.get('seller_phone_number')!.touched">*Seller Phone Number Required</span>
+                </mat-error>  
+                <mat-form-field class="field" appearance="fill">
+                    <mat-label>Seller State</mat-label><input type="text" matInput  formControlName ="seller_state" name="seller_state" placeholder="Seller State">
+              </mat-form-field>
+              <mat-error>
+               <span *ngIf="!vehicleRegisterForm.get('seller_state')!.valid && vehicleRegisterForm.get('seller_state')!.touched">Seller State</span>
+           </mat-error> 
+
+                   <mat-form-field class="field" appearance="fill">
+                         <mat-label>Seller Province State</mat-label><input type="text" matInput  formControlName ="seller_province_state" name="seller_province_state" placeholder=" Seller Province State">
+                   </mat-form-field>
+                   <mat-error>
+                    <span *ngIf="!vehicleRegisterForm.get('seller_province_state')!.valid && vehicleRegisterForm.get('seller_province_state')!.touched">*Seller Province State Required</span>
+                </mat-error>  
+                
+                   
+                
+            </div>
+        </div>
+        <button  class ="button" mat-raised-button color='primary' [disabled]="!vehicleRegisterForm.valid">Register</button>
+    </form>
+  </mat-card-content>
+</mat-card> 

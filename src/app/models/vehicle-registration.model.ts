@@ -1,0 +1,35 @@
+export class VehicleRegistration {
+    owner_id_number: any;
+    owner_first_name : string = "";
+    owner_family_name : string = "";
+    owner_city: string = "";
+    owner_email_address: string = "";
+    owner_date_of_birth: any;
+    owner_province: string = "";
+    owner_phone_number: number | undefined;
+    owner_state: string = "";
+    owner_street_address: string = "";
+    country_make: string = "";
+    vehicle_make: string = "";
+    vehicle_colour:  string = "";
+    vehicle_usage: string = "";
+    number_of_cylinders: number | undefined;
+    body_type: string = "";
+    vehicle_model: string = "";
+    odometer_reading: number | undefined;
+    date_purchased: string="" ;
+    fuel_type: string = ""; 
+    vin: number | undefined;
+    year_make: number | undefined;
+    seller_first_name: string = "";
+    seller_family_name: string = "";
+    seller_id_number: any;
+    seller_date_of_birth: any;
+    seller_email_address: string = "";
+    seller_phone_number: number | undefined ;
+    seller_street_address: string = "";
+    seller_city: string = "";
+    seller_province: string = "";
+    seller_company_name: string = "";
+    seller_state: string =""; 
+}

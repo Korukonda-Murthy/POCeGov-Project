@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "user_email": "dani@gmail.com",
+      "user_password": "sds",
+      "first_name": "murthy",
+      "family_name": "obsi",
+      "id": 2
+    },
+    {
+      "user_email": "kalees@gmail.com",
+      "user_password": "gfsghx",
+      "first_name": "kalees",
+      "family_name": "govid",
+      "id": 3
+    },
+    {
+      "user_email": "obsitech@gmil.com",
+      "user_password": "010211",
+      "first_name": "obsi",
+      "family_name": "obsi",
+      "id": 4
+    },
+    {
+      "owner_first_name": "Daniel",
+      "owner_family_name": "Francis",
+      "owner_city": "ooty",
+      "owner_email_address": "ooty",
+      "owner_province": "Ooty",
+      "owner_state": "Tamilnadu",
+      "owner_street_address": "vb nager",
+      "country_make": "india",
+      "vehicle_make": "honda",
+      "vehicle_colour": "Black",
+      "vehicle_usage": "home usage",
+      "vehicle_body_type": "rtge",
+      "vehicle_model": "city",
+      "fuel_type": "diesel",
+      "seller_first_name": "kalees",
+      "seller_family_name": "govind",
+      "seller_email_address": "kalees@gmail.com",
+      "seller_street_address": "T-Nagar",
+      "seller_city": "theni",
+      "seller_province_state": "andra",
+      "seller_company_name": "rteeryd",
+      "seller_state": "tamilnadu",
+      "date_purchase": "2021-09-16",
+      "number_of_cylinder": "6",
+      "odometer_reading": "45420",
+      "owner_date_of_birth": "2021-09-02",
+      "owner_id_number": "bhj424ws",
+      "owner_phone_number": "345332542345",
+      "seller_date_of_birth": "2021-08-05",
+      "seller_id_number": "fdfhndbh12",
+      "seller_phone_number": "5467845",
+      "vin": "ertr4",
+      "year_make": "1998",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
